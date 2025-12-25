@@ -1,0 +1,13 @@
+Eldo Sanders
+109407
+
+MVVM penting karena memisahkan tampilan, logika, dan data sehingga aplikasi lebih rapi, mudah dirawat, dan mudah diuji. Model menangani data (entity, DAO, API, repository), View adalah Activity/Fragment dan XML layout, sedangkan ViewModel mengelola data UI dan menjadi penghubung antara View dan Model.
+
+
+Data Binding lebih efisien karena menghubungkan UI langsung dengan data di ViewModel, sehingga UI otomatis ter-update saat data berubah tanpa banyak kode manual.
+
+Singleton Pattern penting agar hanya ada satu instance objek penting (seperti database atau API service), sehingga penggunaan memori efisien dan data tetap konsisten.
+
+Repository Pattern penting karena menyatukan akses ke berbagai sumber data (API dan database) dan memisahkan detail pengambilan data dari ViewModel, membuat kode lebih bersih dan mudah dikembangkan.
+
+Selain WorkManager, pembaruan data bisa dilakukan dengan memanggil API langsung menggunakan coroutine, refresh manual oleh pengguna, atau sinkronisasi saat aplikasi dibuka, namun WorkManager lebih andal untuk proses background jangka panjang.
